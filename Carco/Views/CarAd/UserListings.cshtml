@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Carco.Entities.CarAdEntity>
+
+@{
+    ViewData["Title"] = "UserListings";
+}
+<style>
+    .cards {
+        text-align: center;
+    }
+</style>
+<div class="title">
+    <h2 style="margin-bottom:50px;">Your Listings</h2>
+</div>
+
+<body class="body">
+    <section class="cards">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var carAd in Model)
+            {
+                const int maxLength = 19;
+                String name;
+                if (carAd.AdTitle.Length > maxLength)
+                {
+                    name = carAd.AdTitle.Substring(0, maxLength) + "...";
+                }
+                else
+                {
+                    name = carAd.AdTitle;
+                }
+                <div class="servcard">
+                    <div class="servimg">
+                        <center><img src="@Url.Action("GetImage","CarAd",new {carAd.Id})" /></center>
+                        <center><h5 style="font-size:25px; font-weight:bolder; color:slategrey; ">@name</h5></center>
+                        <center><h6 style="font-size: 20px; font-weight:bolder; color:#3e1892">Price: @carAd.CarPrice EGP</h6></center>
+                        <form method="post" action="@Url.Action("RemoveAd", "CarAd", new { id = carAd.Id })">
+                            <button class="RemoveBtn" type="submit"><i class="fa-solid fa-trash"></i></button>
+                        </form>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <h2 style="color:orangered;">No Listings yet</h2>
+        }
+    </section>
+</body>

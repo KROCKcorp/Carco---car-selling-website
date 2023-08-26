@@ -1,0 +1,187 @@
+﻿@model Carco.Entities.CarAdEntity
+@{
+    ViewData["Title"] = "Car Details";
+}
+
+<style>
+
+    .title h5 {
+        font-weight: 200;
+    }
+
+    .imges{
+           padding:10px;
+    }
+
+    #im2 {
+        display: inline-block;
+        width: 150px;
+    }
+
+    .price {
+        padding: 10px;
+        width: 100%;
+        height: 50px;
+        background-color: #262626;
+        border-radius: 10px;
+    }
+
+    .carddd {
+        margin-left: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+.cardet {
+    display: inline-block;
+}
+
+.cardet ul {
+    padding:0px;
+    width: 360px;
+    list-style: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.cardet li {
+    padding: 10px;
+    border-top: 1px solid;
+}
+
+#first {
+    border: none;
+}
+
+.cardet span {
+    margin-left: 10px;
+    padding: 10PX;
+}
+
+    .car-picture-modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.9);
+    }
+    .desc{
+        padding:20px;
+        margin-bottom:20px;
+        background: #262626;
+        border-radius:10px;
+        word-wrap: break-word;
+    }
+    .desc p {
+        font-size:20px;
+    }
+    .car-picture-modal-content {
+        margin: auto;
+        display: flex;
+        justify-content:center;
+        max-width: 85%;
+        max-height: 85%;
+    }
+
+    .car-picture-modal-close {
+        text-align:center;
+        top: 250px;
+        right: 800px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+</style>
+
+<body>
+    <div class="title">
+        <center>
+            <h2>@Model.AdTitle</h2>
+        </center>
+        <br />
+        <div class="price">
+            <h3>Seller: <span style="color:#3e1892; text-transform: capitalize;">@Model.User.FirstName @Model.User.LastName</span></h3>
+        </div>
+    </div>
+    <section class="imges">
+        <div id="car-picture-modal" class="car-picture-modal">
+            <img class="car-picture-modal-content" />
+        </div>
+        <br />
+        @foreach (var picture in Model.Pictures)
+        {
+            <div id="im2">
+                <img src="@Url.Action("GetAllImages","CarAd",new {id = picture.Id})" 
+                class="car-picture" data-index="@picture.Id" width="100%" height="100%"/>
+            </div>
+        }
+
+        <script>
+            var carPictures = document.querySelectorAll('.car-picture');
+            var carPictureModal = document.getElementById('car-picture-modal');
+            var carPictureModalContent = document.querySelector('.car-picture-modal-content');
+            var carPictureModalClose = null;
+
+            carPictures.forEach(function (picture) {
+                picture.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    carPictureModalContent.src = picture.src;
+
+                    if (!carPictureModalClose) {
+                        carPictureModalClose = document.createElement('span');
+                        carPictureModalClose.classList.add('car-picture-modal-close');
+                        carPictureModalClose.innerHTML = '&times;';
+                        carPictureModal.appendChild(carPictureModalClose);
+                        carPictureModalClose.addEventListener('click', function (event) {
+                            event.preventDefault();
+                            carPictureModal.style.display = 'none';
+                            carPictureModalClose.remove();
+                            carPictureModalClose = null;
+                        });
+                    }
+
+                    carPictureModal.style.display = 'block';
+                    carPictureModalClose.style.display = 'block';
+                });
+            });
+        </script>
+
+    </section>
+    <div class="price">
+        <h3>Asking Price: <span style ="color:#3e1892;">@Model.CarPrice</span> EGP</h3>
+    </div>
+    <center>
+        <div class="carddd">
+            <div class="cardet">
+                <ul>
+                    <li id="first">Make<span>@Model.CarMake</span></li>
+                    <li>Model<span>@Model.CarModel</span></li>
+                    <li>Odometer<span>@Model.CarKilometers</span></li>
+                    <li>VIN<span>@Model.CarVIN</span></li>
+                </ul>
+            </div>
+            <div class="cardet">
+                <ul>
+                    <li id="first">Model Year<span>@Model.CarYear</span></li>
+                    <li>Transmission<span>@Model.CarTransmission</span></li>
+                    <li>Body Style<span>@Model.CarType</span></li>
+                    <li>Fuel Type<span>@Model.CarPower</span></li>
+                </ul>
+            </div>
+        </div>
+    </center>
+    <h3>Ad Description:</h3>
+        <div class="desc">
+                <p>@Model.AdDescription</p>
+        </div>
+    <div class="price">
+        <h4> Contact Owner: <span style ="color:#3e1892;">+20 @Model.User.PhoneNumber</span></h4>
+    </div>
+</body>
+

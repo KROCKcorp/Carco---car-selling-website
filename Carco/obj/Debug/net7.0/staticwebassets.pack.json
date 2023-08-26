@@ -1,0 +1,313 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Carco.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Carco.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\Carco icon black.png",
+      "PackagePath": "staticwebassets\\img\\Carco icon black.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\Carco icon.png",
+      "PackagePath": "staticwebassets\\img\\Carco icon.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\Dalia.jpg",
+      "PackagePath": "staticwebassets\\img\\Dalia.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\Mariem.jpg",
+      "PackagePath": "staticwebassets\\img\\Mariem.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\arw.png",
+      "PackagePath": "staticwebassets\\img\\arw.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\background.png",
+      "PackagePath": "staticwebassets\\img\\background.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\carco.png",
+      "PackagePath": "staticwebassets\\img\\carco.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\kerolos._.atef-13-05-2023-0001.png",
+      "PackagePath": "staticwebassets\\img\\kerolos._.atef-13-05-2023-0001.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\markjoseph7603-13-05-2023-0001.png",
+      "PackagePath": "staticwebassets\\img\\markjoseph7603-13-05-2023-0001.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\markos00yousef-13-05-2023-0001.jpg",
+      "PackagePath": "staticwebassets\\img\\markos00yousef-13-05-2023-0001.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\motaz_ismail_muhamed-13-05-2023-0001.png",
+      "PackagePath": "staticwebassets\\img\\motaz_ismail_muhamed-13-05-2023-0001.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\mustafahamdy_mh-13-05-2023-0001.png",
+      "PackagePath": "staticwebassets\\img\\mustafahamdy_mh-13-05-2023-0001.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\img\\search.png",
+      "PackagePath": "staticwebassets\\img\\search.png"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\Projects\\Web Engineering\\Carco v10\\Carco\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Carco.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Carco.props",
+      "PackagePath": "build\\Carco.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Carco.props",
+      "PackagePath": "buildMultiTargeting\\Carco.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Carco.props",
+      "PackagePath": "buildTransitive\\Carco.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

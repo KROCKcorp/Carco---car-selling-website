@@ -1,0 +1,131 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<style>
+    #title {
+        margin-top:100px;
+        margin-right:100px;
+    }
+
+    .Login_Container{
+        margin-top:20px;
+        backdrop-filter:blur(7px);
+        padding:10px;
+        padding-left:40px;
+        padding-right:40px;
+        border-radius:30px;
+        border:#ffff 1px solid;
+
+    }
+
+    .Login_Container hr {
+        color:#ffff;
+    }
+
+    .Login_Container input {
+        background:transparent;
+        color:#ffff;
+    }
+
+    .Login_Container label{
+        color: #ffff;
+    }
+
+        .Login_Container input:focus {
+            background: #000000;
+        }
+
+
+
+    .Login_title h3,p{
+        color:#ffff;
+        text-align:center;
+    }
+    .Login_title span{
+        color: #3e1892;
+        font-size:35px;
+    }
+
+    #login-submit{
+        color:black;
+        background: #ffff;
+        border-radius:10px;
+        border:none;
+        transition:0.5s;
+        margin-bottom:10px;
+    }
+
+    #login-submit:hover {
+            background: #3e1892;
+    }
+    .links a{
+        color:#ffff;
+        margin:0px;
+        text-decoration:none;
+    }
+
+    .links a:hover {
+            color: #3e1892;
+    }
+
+    .form-check-input {
+        border:#ffff 1px solid;
+    }
+
+</style>
+
+<div class="row">
+    <div id="title" class="col-md-6 col-md-offset-2">
+        <section class="Login_title">
+            <img width="100%" height="100%" src="~/img/carco.png" />
+            <h3>Because You don't like to <span>search</span> around</h3>
+            <p>Carco is where you will find new and used vehicles. Carco Motors is easy to navigate by vehicle type, category of items, sales and events, or brand and type of car, motorcycle, pickup, or SUV.</p>
+
+
+        </section>
+    </div>
+    <div class="col-md-4">
+        <section class="Login_Container">
+            <form id="account" method="post">
+                <center><h1>@ViewData["Title"]</h1></center>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                    <label asp-for="Input.Email" class="form-label"><i class="fa-solid fa-envelope"></i>&nbspEmail</label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                    <label asp-for="Input.Password" class="form-label"><i class="fa-solid fa-lock"></i>&nbspPassword</label>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <p class="links">
+                    <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                </p>
+                <div class="checkbox mb-3">
+                    <label asp-for="Input.RememberMe" class="form-label">
+                        <input class="form-check-input" asp-for="Input.RememberMe" />
+                        @Html.DisplayNameFor(m => m.Input.RememberMe)
+                    </label>
+                </div>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                </div>
+                <div class="links">
+                    <p>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

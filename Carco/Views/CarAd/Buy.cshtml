@@ -1,0 +1,111 @@
+﻿@model CarFilterViewModel
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Buy";
+}
+
+<body class="body">
+    <div class="title">
+        <h2>Cars for sale</h2>
+        <form method="get" action="@Url.Action("Buy")">
+            <div class="searchFilter">
+                <input type="text" id="search" placeholder="Toyota" name="search"/>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+    <center>
+        <form method="get" action="@Url.Action("Buy")">
+            <div class="filter">
+                <select class="Drpdwn" id="make" name="make">
+                    <option class="option1" value="">Make</option>
+                    @if (Model.Makes != null)
+                    {
+                        @foreach (var make in Model.Makes)
+                        {
+                            <option value="@make">@make</option>
+                        }
+                    }
+                </select>
+                <select class="Drpdwn" id="model" name="model">
+                    <option class="option1" value="">Model</option>
+                    @if (Model.Models != null)
+                    {
+                        @foreach (var CarModel in Model.Models)
+                        {
+                            <option value="@CarModel">@CarModel</option>
+                        }
+                    }
+                </select>
+                <select class="Drpdwn" id="year" name="year">
+                    <option class="option1" value="">Year</option>
+                    @if (Model.Years != null)
+                    {
+                        @foreach (var year in Model.Years)
+                        {
+                            <option value="@year">@year</option>
+                        }
+                    }
+                </select>
+                <select class="Drpdwn" id="transmission" name="transmission">
+                    <option class="option1" value="">Transmission</option>
+                    @if (Model.Transmissions != null)
+                    {
+                        @foreach (var trans in Model.Transmissions)
+                        {
+                            <option value="@trans">@trans</option>
+                        }
+                    }
+                </select>
+                <button class="FilterBtn" type="submit">Filter</button>
+            </div>
+        </form>
+    </center>
+    <center>
+        <section class="cards">
+            @if (Model != null && Model.CarAds.Any())
+            {
+                @foreach (var carAd in Model.CarAds)
+                {
+                    const int maxLength = 19;
+                    String name;
+                    if (carAd.AdTitle.Length > maxLength)
+                    {
+                        name = carAd.AdTitle.Substring(0, maxLength) + "...";
+                    }
+                    else
+                    {
+                        name = carAd.AdTitle;
+                    }
+                    <div class="servcard">
+                        <div class="servimg" onclick="window.location.href='@Url.Action("Car",new {id = carAd.Id})'">
+                            <center><img src="@Url.Action("GetImage","CarAd",new {carAd.Id})" /></center>
+                            <center><h5 style="font-size:25px; font-weight:bolder; color:#2e2e2e; ">@name</h5></center>
+                            <h6 style="font-size: 20px; font-weight:bolder; color:#3e1892">Price @carAd.CarPrice EGP</h6>
+                            <form method="post" action="@Url.Action("Add","Favourites")">
+                                <input type="hidden" name="carAdId" value="@carAd.Id" />
+                                @{
+                                    var isFavourite = Model.UserFavorites.Any(f => f.CarAdId == carAd.Id);
+                                    if (isFavourite)
+                                    {
+                                        <button class="FavBtn" type="submit"><i class="fa-solid fa-star" style=" color:gold;"></i></button>
+                                    }
+                                    else
+                                    {
+                                        <button class="FavBtn" type="submit"><i class="fa-solid fa-star"></i></button>
+                                    }
+                                }
+                            </form>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <br />
+                <h2>Couldn't find any cars</h2>
+            }
+        </section>
+    </center>
+</body>

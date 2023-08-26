@@ -1,0 +1,307 @@
+﻿@model Carco.Models.AddCarAdViewModel
+@{
+    ViewData["Title"] = "Sell";
+}
+
+
+<style>
+    input::placeholder {
+        color: #ffff
+    }
+
+    .car-header {
+        margin-top: 90px;
+        margin-left: 60px;
+    }
+
+    #line1 {
+        width: 150px;
+    }
+
+    .text P {
+        color: #ffff;
+        margin: 0px 200px 0px 60px;
+    }
+
+    .car-info {
+        background: transparent;
+        backdrop-filter: blur(7px);
+        margin: 20px 300px 20px 300px;
+        border-radius: 20px;
+    }
+
+    .title {
+        padding-top: 30px;
+    }
+
+        .title h5 {
+            margin: 0px 0px 30px 30px;
+        }
+
+        .title i {
+            color: #3e1892;
+        }
+
+    .user input {
+        color: white;
+        background-color: #1c1d24;
+        margin: 10px 0px 10px 30px;
+        padding-left: 15px;
+        border: none;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .car input {
+        color: white;
+        background-color: #1c1d24;
+        margin: 10px 0px 10px 30px;
+        padding-left: 15px;
+        border: none;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .car button {
+        margin-left: 30px;
+    }
+
+    .box textarea {
+        margin-left: 30px;
+        color: white;
+        background-color: #1c1d24;
+        resize: none;
+        border: none;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-top: 15px;
+        width: 440px;
+        height: 200px;
+    }
+
+    .box2 input {
+        margin-left: 30px;
+        color: white;
+        background-color: #1c1d24;
+        resize: none;
+        border: none;
+        border-radius: 10px;
+        padding-left: 15px;
+        width: 440px;
+        height: 50px;
+    }
+
+    .quest label {
+        margin-left: 30px;
+    }
+
+    .quest button {
+        color: black;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #ques {
+        margin: 10px 10px 10px 30px;
+        width: 140px
+    }
+
+    #ques2 {
+        margin: 10px 10px 10px 30px;
+        width: 140px
+    }
+
+    #ques3 {
+        margin: 10px 10px 10px 30px;
+        width: 140px
+    }
+
+    .sub {
+        margin: 10px 0px 0px 200px;
+        padding-bottom: 30px;
+    }
+
+        .sub input {
+            padding: 10px;
+            color: black;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+            .sub input:hover {
+                padding: 10px;
+                background-color: #3e1892;
+                color: black;
+                cursor: pointer;
+            }
+
+    #ri {
+        width: 10px;
+        height: 10px;
+    }
+
+    .Drpdwn {
+        outline: 0;
+        border: none;
+        color: #ffff;
+        background-color: #3e1892;
+        border-radius: 10px;
+        margin: 10px 0px 10px 30px;
+        width: 200px;
+        height: 45px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    select {
+        background: url('../img/arw.png') no-repeat right;
+        background-size: 20px 20px;
+        -webkit-appearance: none;
+        background-position-x: 175px;
+    }
+
+    .option1 {
+        color: #ffffff;
+        background-color: #542aaf;
+        font-weight: 600;
+    }
+
+    select:focus > option:checked {
+        background: #3e1892 !important;
+    }
+
+    .option {
+        color: black;
+        background-color: #ffff;
+        font-weight: 600;
+    }
+
+    input[type=file] {
+        width: 440px;
+        max-width: 100%;
+        color: #444;
+        background: transparent;
+        border-radius: 10px;
+        border: 1px solid #555;
+    }
+
+input[type=file]::file-selector-button {
+    margin-top:2px;
+    margin-right: 20px;
+    border: none;
+    background: #3e1892;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #9999;
+    color:#000000;
+}
+
+/*hides scrolling on numeric inputs*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+</style>
+
+<body class="body">
+    <div class="car-header">
+        <h4>Tell us about your car</h4>
+    </div>
+    <hr style="height:4px; border-width:0; color:white; background-color:white;">
+    <div class="text">
+        <P>
+            Please give us some basics about yourself and the car you’d like to sell. We’ll also need details about the car’s title status as well as 12 photos that highlight the car’s exterior and interior condition.&nbsp;
+            <br>
+            <br>
+            We’ll respond to your application within a business day. Once accepted, we’ll ask for more details and at least 50 high-res photos, then work with you to build a custom and professional listing and get the Ad live.
+        </P>
+    </div>
+    <form method="post" asp-action="Sell" enctype="multipart/form-data">
+        <div class="car-info">
+            <div class="car">
+                <div class="title">
+                    <h5><i class="fa-solid fa-car"></i>&nbsp Ad Details</h5>
+                </div>
+                <div class="sec">
+                    <input style="width:440px" type="text" aria-setsize="100" maxlength="100" placeholder="Ad Title" required asp-for="AdTitle">
+                    <input style="width:440px" type="text" aria-setsize="17" maxlength="17" placeholder="Car VIN Number" required asp-for="CarVIN">
+                </div>
+                <div class="sec">
+                    <input type="text" maxlength="50" placeholder="Make" required asp-for="CarMake">
+                    <input type="text" maxlength="100" placeholder="Model" required asp-for="CarModel">
+                </div>
+                <div class="sec">
+                    <input type="number" minlength="4" inputmode="numeric" maxlength="4" placeholder="1980" required asp-for="CarYear">
+                    <input type="hidden" asp-for="CarYear" />
+                    <select id="BodyStyle" name="selectedBodyType" class="Drpdwn" required>
+                        <option class="option1" value="" disabled selected>Body Style</option>
+                        <option class="option" value="Hatchback">Hatchback</option>
+                        <option class="option" value="Station Wagon">Station Wagon</option>
+                        <option class="option" value="Minivan">Minivan</option>
+                        <option class="option" value="Sports Sedan">Sports Sedan</option>
+                        <option class="option" value="Sedan">Sedan</option>
+                        <option class="option" value="Convertible">Convertible</option>
+                        <option class="option" value="Sports Car">Sports Car</option>
+                        <option class="option" value="Super Car">Super Car</option>
+                        <option class="option" value="Hyper Car">Hyper Car</option>
+                        <option class="option" value="Pickup Truck">Pickup Truck</option>
+                        <option class="option" value="SUV">SUV</option>
+                        <option class="option" value="Coupe">Coupe</option>
+                        <option class="option" value="Crossover">Crossover</option>
+                        <option class="option" value="Roadster">Roadster</option>
+                        <option class="option" value="Hot Hatch">Hot Hatch</option>
+                    </select>
+                </div>
+                <div class="sec">
+                    <input type="number" max="999999999" inputmode="numeric" placeholder="Odometer Kilometres" required asp-for="CarKilometers">
+                    <select id="Transmission" name="selectedTransmission" class="Drpdwn" required>
+                        <option class="option1" value="" disabled selected>Transmission</option>
+                        <option class="option" value="Automatic">Automatic</option>
+                        <option class="option" value="Manual">Manual</option>
+                        <option class="option" value="Sequential">Sequential</option>
+                        <option class="option" value="Automated Manual">Automated Manual</option>
+                        <option class="option" value="CVT">CVT</option>
+                        <option class="option" value="DCT">DCT</option>
+                    </select>
+                </div>
+                <div class="sec">
+                    <input type="number" max="1000000000000" inputmode="numeric" placeholder="Price" required asp-for="CarPrice">
+                    <select id="FuelType" name="selectedFuelType" class="Drpdwn" required>
+                        <option class="option1" value="" disabled selected>Fuel Type</option>
+                        <option class="option" value="Petrol">Petrol</option>
+                        <option class="option" value="Diesel">Diesel</option>
+                        <option class="option" value="E85">E85</option>
+                        <option class="option" value="Race Fuel">Race Fuel</option>
+                        <option class="option" value="Electric">Electric</option>
+                        <option class="option" value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <textarea type="text" textarea aria-setsize="4000" maxlength="4000" placeholder="Ad Description" required asp-for="AdDescription" spellcheck="true"></textarea>
+                </div>
+                <div>
+                    <input type="file" id="pictures" name="pictures" accept="image/jpeg" multiple required />
+                </div>
+                <div>
+                    <center>
+                        <span asp-validation-for="Pictures" class="text-danger"></span>
+                    </center>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>

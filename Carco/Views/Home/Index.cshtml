@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/site.css" rel="stylesheet" />
+<body id="home">
+    <div class="text-holder">
+        <center><img width="800px" src="~/img/carco.png" /></center>
+        <h3>Because You don't like to <span style="font-weight:800;">search</span> around</h3>
+        <br/>
+        <div class="button">
+             <button type="button" class="btn_buy" onclick="location.href='@Url.Action("Buy","CarAd")'">Buy a Car</button>
+            <button type="button" class="btn_sell" onclick="location.href='@Url.Action("Sell","CarAd")'">Sell a Car</button>
+        </div>
+    </div>
+</body>

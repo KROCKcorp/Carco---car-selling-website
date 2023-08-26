@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<style>
+input::placeholder{
+    color:#ffff
+}
+
+#line1 {
+    width: 150px;
+    margin-left: 10px;
+    border:1px solid #ffff;
+}
+
+.contact-content {
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-content span {
+    padding: 20px;
+    font-weight: 600;
+}
+
+.contact-content i {
+    color: #3e1892;
+}
+
+.map {
+    padding: 0%;
+}
+    /* <================= Contact =================> */
+    #contact {
+        background-color: var(--bg-color-1);
+    }
+
+        #contact .animate-bar::before {
+            border-color: var(--bg-color-1);
+        }
+
+        #contact .container {
+            align-items: flex-start;
+            gap: 2.5rem;
+        }
+
+        #contact form {
+            width: 50%;
+        }
+    form .form-row {
+        display: flex;
+        justify-content:center;
+        gap: 15px;
+        
+    }
+
+    .form-row .input-data {
+        width: 50%;
+        display: block;
+    }
+
+    .input-data input, textarea {
+        background-color: #1c1d24;
+        width: 90%;
+        display: block;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid transparent;
+        font-size: 17px;
+        margin-top: 20px;
+        transition: border-bottom-color 0.3s ease;
+    }
+
+    .input-data textarea {
+        padding: 10px 10px 120px;
+    }
+
+    .input-data input:focus, textarea:focus {
+        border-bottom-color: var(--main-color);
+    }
+
+    .btn {
+        margin-top:10px;
+        color: #000000;
+        background-color: #ffffff;
+    }
+    .btn:hover{
+            background: var(--main-color);
+    }
+</style>
+
+<!-------------- Contact Info Section -------------->
+<body>
+    <section class="contact-info">
+        <div class="contact-header">
+            <h4>Contact Info</h4>
+            <button id="line1"></button>
+        </div>
+        <div class="contact-content">
+            <div class="adress">
+                <i class="fa-solid fa-location-dot"></i>
+                <span><h7>&nbsp;Address:</h7></span>
+                <h8>CIC , New Cairo , Katameia Heights</h8>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <span><h7>Phone Number:</h7></span>
+                <h8>19086</h8>
+            </div>
+            <div class="Email">
+                <i class="fa-solid fa-envelope"></i>
+                <span><h7> Email Address:</h7></span>
+                <h8>info@carco.com</h8>
+            </div>
+        </div>
+    </section>
+    <section class="contact-info">
+        <div class="contact-header">
+            <h4>Our Location</h4>
+            <button id="line1"></button>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55268.49007355482!2d31.38669268591884!3d30.028805886228966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cd880d6ec4b%3A0xbaf0462037860f7c!2sCanadian%20International%20College!5e0!3m2!1sen!2seg!4v1680735278385!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</body>

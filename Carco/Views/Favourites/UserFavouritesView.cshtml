@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Carco.Entities.UserFavouriteEntity>
+
+@{
+    ViewData["Title"] = "UserFavouritesView";
+}
+
+<style>
+    .cards {
+        text-align: center;
+    }
+</style>
+<div class="title">
+    <h2 style="margin-bottom:50px;">Your Favourites</h2>
+</div>
+
+<body class="body">
+    <section class="cards">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var favorite in Model)
+            {
+                const int maxLength = 19;
+                String name;
+                if (favorite.CarAd.AdTitle.Length > maxLength)
+                {
+                    name = favorite.CarAd.AdTitle.Substring(0, maxLength) + "...";
+                }
+                else
+                {
+                    name = favorite.CarAd.AdTitle;
+                }
+                <div class="servcard">
+                    <div class="servimg">
+                        <center><img src="@Url.Action("GetImage","CarAd",new {favorite.CarAd.Id})" /></center>
+                        <center><h5 style="font-size:25px; font-weight:bolder; color:slategrey; ">@name</h5></center>
+                        <center><h6 style="font-size: 20px; font-weight:bolder; color:#3e1892">Price: @favorite.CarAd.CarPrice EGP</h6></center>
+                        <form method="post" action="@Url.Action("Remove", "Favourites", new { id = favorite.Id })">
+                            <button class="RemoveBtn" type="submit"><i class="fa-solid fa-trash"></i></button>
+                        </form>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <h2 style="color:orangered;">No Favourites</h2>
+        }
+    </section>
+</body>

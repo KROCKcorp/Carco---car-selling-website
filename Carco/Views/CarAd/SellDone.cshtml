@@ -1,0 +1,77 @@
+﻿@model Carco.Models.AddCarAdViewModel
+@{
+    ViewData["Title"] = "Sale Confirmation";
+}
+
+<style>
+.thankyou-wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: white;
+    padding: 10px 0px 50px;
+}
+
+.thankyou-wrapper h1 {
+    font: 100px Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #333333;
+    padding: 0px 10px 10px;
+}
+
+.thankyou-wrapper p {
+    font: 26px Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #333333;
+    padding: 5px 10px 10px;
+}
+
+.thankyou-wrapper a {
+    font: 26px Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    width: 250px;
+    border-radius:10px;
+    background: #3e1892;
+    margin: 10px auto 0px;
+    padding: 15px 20px 15px;
+}
+
+.thankyou-wrapper a:hover {
+    font: 26px Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    width: 250px;
+    background: black;
+    margin: 10px auto 0px;
+    padding: 15px 20px 15px;
+}
+
+.thankyou-wrapper span {
+    font-weight: bolder;
+    font-size: 35px;
+    color: #3e1892;
+    line-height: 4;
+}
+</style>
+
+<section class="login-main-wrapper">
+    <div class="main-container">
+        <div class="login-process">
+            <div class="login-main-container">
+                <div class="thankyou-wrapper">
+                    <h1><img src="http://montco.happeningmag.com/wp-content/uploads/2014/11/thankyou.png" alt="thanks" /></h1>
+                    <p>for submitting your CAR AD with <span>Carco</span>, you can go home now </p>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Take Me Home</a>
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+</section>

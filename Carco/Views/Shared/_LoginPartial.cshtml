@@ -1,0 +1,38 @@
+﻿@using Carco.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@if (SignInManager.IsSignedIn(User)){
+
+    <div class="menu">
+        <button class="menubtn"><i class="fa-solid fa-bars"></i>&nbsp&nbsp Menu</button>
+        <div class="menu-content">
+            <ul class="menubar">
+                <li class="nav-item">
+                    <a class="nav-link text-black" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><i class="text-black fa-regular fa-user"></i>&nbsp Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" asp-area="" asp-controller="Favourites" asp-action="UserFavouritesView"><i class="text-black fa-solid fa-star"></i>&nbsp Favourites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" asp-area="" asp-controller="CarAd" asp-action="UserListings"><i class="text-black fa-solid fa-list"></i>&nbsp My Listings</a>
+
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button type="submit" class="nav-link btn btn-link text-dark"><i class="text-black fa-solid fa-arrow-right-from-bracket"></i>&nbspLogout</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </li>
+}
