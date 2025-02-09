@@ -2,7 +2,7 @@
 
 # Carco - Car Selling Website
 
-![Carco Banner](https://via.placeholder.com/1200x400.png?text=Carco+-+Car+Selling+Website)
+![Carco Banner](https://github.com/KROCKcorp/Carco---car-selling-website/blob/main/Carco/wwwroot/img/carco.png)
 
 Carco is a modern car marketplace designed to facilitate seamless buying and selling of vehicles. Built with the .NET MVC framework, it provides a robust and user-friendly platform for car enthusiasts, buyers, and sellers.
 
@@ -52,6 +52,25 @@ Ensure you have the following installed:
 
 
 ## 📸 Screenshots
+
+### login Page
+![Login Page](https://github.com/KROCKcorp/Carco---car-selling-website/blob/main/carco%20screenshots/sign_in.png)
+
+### Home Page
+![Home Page](https://github.com/KROCKcorp/Carco---car-selling-website/blob/main/carco%20screenshots/home.png)
+
+### Car Listings Page
+![Listings Page](https://github.com/KROCKcorp/Carco---car-selling-website/blob/main/carco%20screenshots/listings.png)
+
+### Car Ad Info Page
+![Car Ad Info Page](https://github.com/KROCKcorp/Carco---car-selling-website/blob/main/carco%20screenshots/car_info.png)
+
+### About Us Page
+![About Us Page](https://github.com/KROCKcorp/Carco---car-selling-website/blob/main/carco%20screenshots/about_us.png)
+
+### Contact Us Page
+![Contact Us Page](https://github.com/KROCKcorp/Carco---car-selling-website/blob/main/carco%20screenshots/contact_us.png)
+
 
 ## 📜 License
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details or visit [opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
