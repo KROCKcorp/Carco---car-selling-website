@@ -1,4 +1,13 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![HTML5](https://img.shields.io/badge/HTML5-F07C00?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
+![.NET MVC](https://img.shields.io/badge/.NET%20MVC-512BD4?logo=dotnet&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-009CF0?logo=microsoft%20sql%20server&logoColor=white)
+![Maintained](https://img.shields.io/maintenance/no/2023)
+![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
+
 
 # Carco - Car Selling Website
 
